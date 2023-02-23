@@ -28,7 +28,8 @@ Future pagas (bool pagos) async {
  }
 
 
-Future readTasks ()async{
+Future readTasks ()async{ 
+  var i;
   var result =await _collectionReference.get().then((val) => val.docs);
   result.forEach((element) {total += element.get('valor'); update();});
   tasks = result.map((e) => {'id': e.id, 'data': e.data()} ).toList();
