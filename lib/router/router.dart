@@ -1,11 +1,13 @@
 import 'package:taskes/presenter/home/home_bindings.dart';
+import 'package:taskes/presenter/login/loginbinding.dart';
 
 import '../router/router_import.dart';
 import "package:get/get.dart";
 class AppPages {
    const AppPages._();
    static final pages = <GetPage>[
-    GetPage(name: HomePage.router, page: () =>   HomePage(), binding: HomeBindigs())
+    GetPage(name: LoginPage.router, page: () =>   const LoginPage(), binding: LoginBingings())
+    ,GetPage(name: HomePage.router, page: () =>   HomePage(), binding: HomeBindigs())
    ];
 
   

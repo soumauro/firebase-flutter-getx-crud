@@ -6,10 +6,12 @@ class TaskModel {
   final String title;
   final double valor;
   bool status;
+  String? id;
   TaskModel({
     required this.title,
     required this.valor,
     required this.status,
+    this.id
   });
 
   

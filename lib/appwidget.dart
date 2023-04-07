@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:taskes/presenter/home/home_page.dart';
+//import 'package:taskes/presenter/home/home_page.dart';
+import 'package:taskes/presenter/login/loginpage.dart';
 import 'package:taskes/router/router.dart';
 
 class AppWidget extends StatelessWidget {
@@ -9,7 +10,7 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  GetMaterialApp(
-      initialRoute: HomePage.router,
+      initialRoute: LoginPage.router,
       getPages: AppPages.pages,
     );
   }

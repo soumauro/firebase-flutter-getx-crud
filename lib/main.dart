@@ -8,8 +8,13 @@ void main() async{
    
   await 
    Firebase.initializeApp(options: 
-  const FirebaseOptions(apiKey: "AIzaSyDlTa1kw_qMBbwriNEyJf39UNZQY0mkBys", appId: "1:297009527743:web:cacb41eb52b7612abbbf0a", messagingSenderId: "297009527743", projectId: "strawte-9231b",));
-     
+  const FirebaseOptions(apiKey: "AIzaSyDrqISarGlnSOipK7dzWRuKeO6cdPgN8BY", 
+       
+  authDomain: "aulas-externas.firebaseapp.com",
+  projectId: "aulas-externas",
+  storageBucket: "aulas-externas.appspot.com",
+  messagingSenderId: "430923921108",
+  appId: "1:430923921108:web:158c44790b792e3a686d41"));
    
   runApp(const AppWidget());
 }
