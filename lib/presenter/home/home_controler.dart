@@ -9,6 +9,8 @@ class HomeControler extends GetxController {
    upquery (String valor){
     quirytype =  valor;
     update();
+
+    update();
     }
    
   final CollectionReference _collectionReference = FirebaseFirestore.instance.collection('taskes');
